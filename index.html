@@ -5,10 +5,274 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
+    <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
-    <script src="script.js">
+<div class = 'title'>
+    <h1>Rock Paper Scissors</h1>
+</div>
+<div class="sub-title">
+    <h3>Can you beat the boss?</h3>
+</div>
+<div class = 'result-box'>
+    <h2 class = "final-result">Fight!</h2>
+    <span class = 'round-result'></span>
+</div>
+<div class = 'stat-box-container'>
+    <div class = 'test-div round-count-box stat-box'>
+        <div>
+            <span class = "round-count-number">0</span>
+            <h3>Round</h3>
+        </div>
+    </div>
+    <div class = 'winDrawLooseContainer'>
+        <div class = 'test-div win-count-box stat-box'>
+            <div>
+                <span class = "win-count-number">0</span>
+                <h3>Wins</h3>
+            </div>
+        </div>
+        <div class = 'test-div draw-count-box stat-box'>
+            <div>
+                <span class = "draw-count-number">0</span>
+                <h3>Draws</h3>
+            </div>
+        </div>
+        <div class = 'test-div loose-count-box stat-box'>
+            <div>
+                
+                <span class = "loose-count-number">0</span>
+                <h3>Losses</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "main-container">
+    <div class="options-container">
+        <div class="top-bar">
+            <div>
+                <img src="../rock_paper_scicors/images/greenwojack.png" alt="green wojack" class="pic">
+            </div>
+            <div>
+                <h4>Wojack</h4>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="rock selection test-div">
+                
+                <img src="../rock_paper_scicors/images/rock.png" alt="rock picture" class = "pic">
+                <h3>Rock</h3>
+            </div>
+            <div class="paper selection test-div">
+                
+                <img src="../rock_paper_scicors/images/paper.png" alt="paper picture" class = "pic">
+                <h3>Paper</h3>
+            </div>
+            <div class="scissors selection test-div">
+                
+                <img src="../rock_paper_scicors/images/scissors.png" alt="scissors picture" class = "pic">
+                <h3>Scissors</h3>
+            </div>
+        </div>
+    </div>
+    <div class = 'vsSign'>
+        <img src = '../rock_paper_scicors/images/vsss.png' alt="Vs sign" class="pic">
+    </div>
+    <div class = 'options-container'>
+        <div class="top-bar">
+            <div>
+                <img src="../rock_paper_scicors/images/bogdanoff.png" alt="bogdanoff" class="pic">
+            </div>
+            <div>
+                <h4>Bogdanoff</h4>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="rock computerSelection test-div">
+                
+                <img src="../rock_paper_scicors/images/rock.png" alt="rock picture" class = "pic">
+                <h3>Rock</h3>
+            </div>
+            <div class="paper computerSelection test-div">
+                
+                <img src="../rock_paper_scicors/images/paper.png" alt="paper picture" class = "pic">
+                <h3>Paper</h3>
+            </div>
+                <div class="scissors computerSelection test-div">
+                
+                <img src="../rock_paper_scicors/images/scissors.png" alt="scissors picture" class = "pic">
+                <h3>Scissors</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="new-game">
+    <button class = 'new-game-text'>New Game</button>
+</div>
+<footer class="footer">
+    <span class="footer-text">
+        Built by
+        <a class="footer-link" href="https://github.com/Peperayox" target="_blank">Peperayox</a>
+        |
+        <a class="footer-link" href="https://github.com/Peperayox/rock_paper_scicors" target="_blank">Source Code</a>
+    </span>
+</footer>
 
-    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+    <div class="header">
+        <h1>Can you beat the Boss?</h1>
+    </div>
+    <div class="subheader">
+        <h3>Ready...Set...Fight</h3>
+    </div>
+    <div class="roundCounter">
+        <p>Round: </p>
+    </div>
+    <div class="main"> 
+        <div class="main1">
+            <h4>Wojack</h4>
+            <div class="interface">
+                <div class="logoAndScore">
+                    <img src="../rock_paper_scicors/images/greenwojack.png"
+                    alt="wojacklogo" class="logo">
+                    <div class="scoreKeeper">
+                        <p>Score</p>
+                        <h3 class="userScore">0</h3>
+                    </div>
+                </div>
+                <div class="choices">
+                    <div class="rps" data-button="rock">
+                        <img src='../rock_paper_scicors/images/rock.png' alt="rock" class="rock">
+                        <p>Rock</p>
+                    </div>
+                    <div class="rps" data-button="paper">
+                        <img src='../rock_paper_scicors/images/paper.png' alt="paper" class="paper">
+                        <p>Paper</p>
+                    </div>
+                    <div class="rps"data-button="scissors">
+                        <img src='../rock_paper_scicors/images/scissors.png' alt="scissors" class="scissors">
+                        <p>scissors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vs">
+            <img src="../rock_paper_scicors/images/vsss.png" alt="versus logo" class="vslogo">
+        </div>
+        <div class="main1">
+            <h4>Bogdanoff</h4>
+            <div class="interface">
+                <div class="logoAndScore">
+                    <img src="../rock_paper_scicors/images/bogdanoff.png" alt="bogdanoff" class="logo">
+                    <div class="scoreKeeper">
+                        <p>Score</p>
+                        <h3 class="computerScore"></h3>
+                    </div>
+                </div>
+                <div class="choices">
+                    <div class="rps"
+                    data-button="rock">
+                        <img src='../rock_paper_scicors/images/rock.png' alt="rock" class="rock">
+                        <p>Rock</p>
+                    </div>
+                    <div class="rps"
+                    data-button="paper">
+                        <img src='../rock_paper_scicors/images/paper.png' alt="paper" class="paper">
+                        <p>Paper</p>
+                    </div>
+                    <div class="rps" data-button="scissors">
+                        <img src='../rock_paper_scicors/images/scissors.png' alt="scissors" class="scissors">
+                        <p>scissors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="scoreland">
+        <div class="gitHubLink">
+            <p>Built by: <a href="https://github.com/Peperayox">Peperayox</a> | <a href="https://github.com/Peperayox/rock_paper_scicors">Source code</a></p>
+            <img src="../rock_paper_scicors/images/github.png" alt="gihublogo" class="logo gitlogo">
+        </div>
+        <div class="centralContainer">
+            <div class="youWin">
+                <p>You Win!</p>
+            </div>
+            <div class="historyContainer">
+                <div class="staticContainer">
+                    <div class="staticBox">
+                        <p>Round #</p>
+                    </div>
+                    <div class="staticBox">
+                        <img src="../rock_paper_scicors/images/greenwojack.png" alt="greenwojack" class="smallWojack">
+                    </div>
+                    <div class="staticBox">
+                        <img src="../rock_paper_scicors/images/bogdanoff.png" alt="bogdanoff" class="smallBogdanoff">
+                    </div>
+                    <div class="staticBox">
+                        <p>Tally</p>
+                    </div>
+                </div>
+                <div class="dinamicContainer">
+
+                </div>
+            </div>              
+        </div>
+        <div class="scoreTrackerContanier">
+            <div class="wojackWins">
+                <p>Wojack wins : </p>
+            </div>
+            <div class="WojackWins">
+                <p>Wojack losses : </p>
+            </div>
+            <div class="Ties">
+                <p>Ties : </p>
+            </div>
+        </div>
+    </div>
+-->
+    
+
+
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
